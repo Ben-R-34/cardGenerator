@@ -1,0 +1,135 @@
+[
+  {
+    "name": "Unchecked Power",
+    "type": ["Action"],
+    "rarity": "Rare",
+    "aspect": "Cunning",
+    "cost": "4MaMa",
+    "text": "Destroy all territories, and units and territory improvements on those territories. Each player draws and plays three more territories.",
+    "power": null,
+    "toughness": null,
+    "image": "assets/frame.png"
+  },
+  {
+    "name": "Guerrilla Warfare",
+    "type": ["Edict"],
+    "rarity": "Rare",
+    "aspect": "Cunning",
+    "cost": "2MaMa",
+    "text": "When a hidden unit is revealed it gets +1 power and preemptive strike.",
+    "power": null,
+    "toughness": null,
+    "image": "assets/frame.png"
+  },
+  {
+    "name": "Restricted Supply Routes",
+    "type": ["Reaction"],
+    "rarity": "Uncommon",
+    "aspect": "Cunning",
+    "cost": "2Ma",
+    "text": "Production cards can't be expended this turn.",
+    "power": null,
+    "toughness": null,
+    "image": "assets/frame.png"
+  },
+  {
+    "name": "Silence",
+    "type": ["Reaction"],
+    "rarity": "Uncommon",
+    "aspect": "Cunning",
+    "cost": "2Ma",
+    "text": "Suppress target card until that player's next turn.",
+    "power": null,
+    "toughness": null,
+    "image": "assets/frame.png"
+  },
+  {
+    "name": "Thought Shatter",
+    "type": ["Reaction"],
+    "rarity": "Common",
+    "aspect": "Cunning",
+    "cost": "1Ma",
+    "text": "Prevent target Action or Reaction card.",
+    "power": null,
+    "toughness": null,
+    "image": "assets/frame.png"
+  },
+  {
+    "name": "Veto",
+    "type": ["Reaction"],
+    "rarity": "Common",
+    "aspect": "Cunning",
+    "cost": "MaMa",
+    "text": "Prevent target Edict, Action or Territory improvement.",
+    "power": null,
+    "toughness": null,
+    "image": "assets/frame.png"
+  },
+  {
+    "name": "Gryffhound Pack",
+    "type": ["Companion", "Unit", "Physical"],
+    "rarity": "Common",
+    "aspect": "Cunning",
+    "cost": "3MaMa",
+    "text": "Bond.",
+    "power": 3,
+    "toughness": 4,
+    "image": "assets/frame.png"
+  },
+  {
+    "name": "Khovidian Provoker",
+    "type": ["Human", "Rebel", "Unit", "Physical"],
+    "rarity": "Common",
+    "aspect": "Cunning",
+    "cost": "1Ma",
+    "text": "",
+    "power": 2,
+    "toughness": 1,
+    "image": "assets/frame.png"
+  },
+  {
+    "name": "Backstreet Informer",
+    "type": ["Rebel", "Investigator", "Unit"],
+    "rarity": "Rare",
+    "aspect": "Cunning",
+    "cost": "3MaMa",
+    "text": "When this unit moves to a City or Village territory you may reveal a hidden card there. If you do draw a card.",
+    "power": 1,
+    "toughness": 4,
+    "image": "assets/frame.png"
+  },
+  {
+    "name": "Subversive Saboteur",
+    "type": ["Rebel", "Unit", "Physical"],
+    "rarity": "Uncommon",
+    "aspect": "Cunning",
+    "cost": "2MaMa",
+    "text": "Hidden (1 Mana) Reveal ((2))\nWhen this Unit is revealed deal twice X damage to an adjacent territory improvement, or X damage to an adjacent Unit, where X is this unit's power.",
+    "power": 2,
+    "toughness": 3,
+    "image": "assets/frame.png"
+  },
+  {
+    "name": "Targen, In the Know",
+    "type": ["Unit", "Human", "Physical"],
+    "rarity": "Unique",
+    "aspect": "Cunning",
+    "cost": "3MaMa",
+    "text": "Hidden (1 Mana) Reveal ((2) 1 Mana)\nWhen you reveal this card, draw X cards where X is the number of hidden cards you control\nWhen you play a card Hidden on a territory draw a card, do this once per territory.",
+    "power": 2,
+    "toughness": 5,
+    "image": "assets/frame.png"
+  },
+  {
+    "name": "Shield wall",
+    "type": ["Reaction"],
+    "rarity": "Uncommon",
+    "aspect": "Resilience",
+    "cost": "2St",
+    "text": "Units at target territory take no physical damage this skirmish.",
+    "power": null,
+    "toughness": null,
+    "image": "assets/frame.png"
+  }
+]
+

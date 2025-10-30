@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --card-w: 2.5in;
+    --card-h: 3.42in;
+    --gap: 0.1in;
+    --bleed: 0in;  /* match fronts */
+  }
+  @page { size: Letter; margin: 0.25in; }
+  html, body { margin: 0; }
+  .sheet {
+    display: grid;
+    grid-template-columns: repeat(3, var(--card-w));
+    grid-auto-rows: var(--card-h);
+    gap: var(--gap);
+  }
+  .card {
+    position: relative;
+    width: calc(var(--card-w) + 2 * var(--bleed));
+    height: calc(var(--card-h) + 2 * var(--bleed));
+    background: #111;
+    color: #eee;
+    outline: 0.5pt solid #000;
+    display:flex; align-items:center; justify-content:center;
+    font-family: Inter, Arial, sans-serif; font-weight: 700;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    {% for i in range(count) %}
+    <div class="card">CARD BACK</div>
+    {% endfor %}
+  </div>
+</body>
+</html>

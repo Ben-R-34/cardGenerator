@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  :root {
+    --card-w: 2.5in;
+    --card-h: 3.42in;
+    --gap: 0.1in;
+    --bleed: 0in;     /* change to 0.125in for print-shop bleed */
+    --safe: 0.125in;  /* keep important text inside this inset */
+  }
+
+  @page { size: Letter; margin: 0.25in; }
+  html, body { margin: 0; }
+  body { font-family: Inter, Arial, sans-serif; }
+
+  .sheet {
+    display: grid;
+    grid-template-columns: repeat(3, var(--card-w));
+    grid-auto-rows: var(--card-h);
+    gap: var(--gap);
+  }
+
+  .card {
+    position: relative;
+    width: calc(var(--card-w) + 2 * var(--bleed));
+    height: calc(var(--card-h) + 2 * var(--bleed));
+    box-sizing: border-box;
+    background: #fff;
+    outline: 0.5pt solid #000; /* trim guide */
+    overflow: hidden;
+  }
+
+  .card-inner {
+    position: absolute;
+    left: var(--bleed); top: var(--bleed);
+    width: var(--card-w); height: var(--card-h);
+    box-sizing: border-box;
+    padding: var(--safe);
+  }
+
+  .art {
+    position: absolute; inset: 0;
+    background-size: cover; background-position: center;
+    opacity: 0.08;
+  }
+
+  .header { display:flex; justify-content:space-between; font-weight:700; }
+  .type   { margin: 4pt 0; font-size: 9pt; color:#333; }
+  .rules  { font-size: 9pt; line-height: 1.25; white-space: pre-wrap; }
+  .pt     { position:absolute; right: var(--safe); bottom: var(--safe); font-weight:700; }
+  .rarity { position:absolute; left: var(--safe);  bottom: var(--safe); font-size:8pt; color:#666; }
+  .cost   { font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    {% for c in cards %}
+    <div class="card">
+      {% if c.image %}<div class="art" style="background-image:url('{{ c.image }}')"></div>{% endif %}
+      <div class="card-inner">
+        <div class="header">
+          <div>{{ c.name }}</div>
+          <div class="cost">{{ c.cost }}</div>
+        </div>
+        <div class="type">{{ c.type | join(' ') }}</div>
+        <div class="rules">{{ c.text }}</div>
+        {% if c.power and c.toughness %}<div class="pt">{{ c.power }}/{{ c.toughness }}</div>{% endif %}
+        <div class="rarity">{{ c.rarity }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
