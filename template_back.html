@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
 <head>
+  <base href="{{ base_href }}/">
 <meta charset="utf-8">
 <style>
   :root {
     --card-w: 2.5in;
-    --card-h: 3.42in;
+    --card-h: 3.403in;
     --gap: 0.1in;
     --bleed: 0in;  /* match fronts */
   }
@@ -28,13 +29,45 @@
     font-family: Inter, Arial, sans-serif; font-weight: 700;
     letter-spacing: 1px;
   }
+
+  .header { display:flex; justify-content:space-between; font-weight:300; }
+  .type   { margin: 4pt 0; font-size: 9pt; color:#333; }
+  .rules  { font-size: 9pt; line-height: 1.25; white-space: pre-wrap; }
+  .pt     { font-weight:700; justify-self: end;}
+  .rarity { font-size:8pt; color:#666; justify-self: start;}
+  .aspect { font-size:8pt; color:#666; justify-self: center;}
+  .cost   { font-variant-numeric: tabular-nums; }
+  .title { font-size: 16pt; margin-bottom: 8pt; }
+
+    /* Generic icon back for non-leaders */
+  .icon-back {
+  position:absolute; inset:0;
+  background-image:url("C:/Users/kopfb/Desktop/cardGenerator/assets/Project_Conquer.png");
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:contain; /* or 'cover' if you want full bleed */
+}
+
 </style>
 </head>
 <body>
   <div class="sheet">
-    {% for i in range(count) %}
-    <div class="card">CARD BACK</div>
-    {% endfor %}
+  {% for c in cards %}
+  <div class="card {{ c.orientation }}">
+    <div class="inner {% if not c.has_back %}blank{% endif %}">
+      {% if c.has_back %}
+        <div>
+          <div class="title">{{ c.bName or c.name }}</div>
+          {% if c.cost %}<div class="cost">{{ c.cost }}</div>{% endif %}
+          <div>{{ c.btext }}</div>
+        </div>
+      {% else %}
+        <div class="icon-back">
+        </div>
+      {% endif %}
+    </div>
   </div>
+  {% endfor %}
+</div>
 </body>
 </html>

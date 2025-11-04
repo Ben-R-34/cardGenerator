@@ -1,135 +1,1194 @@
 [
   {
-    "name": "Unchecked Power",
-    "type": ["Action"],
-    "rarity": "Rare",
+    "name": "Amethyst Throne, Seat of the Jagged Queen",
+    "aspect": "Honor",
+    "rarity": "Unique",
+    "type": [
+      "Citadel"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "When a unit you control wins a challenge gain 1 gold, do this once per unit.",
+    "has_back": false,
+    "health": "25",
+    "shield": "5",
+    "ca": "0",
+    "cost": ""
+  },
+  {
+    "name": "The Broken Crown, Heart of the Rebellion",
+    "aspect": "Resilience",
+    "rarity": "Unique",
+    "type": [
+      "Citadel"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "Rebel Units you control gain Shielded 1 and +1 toughness",
+    "has_back": false,
+    "health": "25",
+    "shield": null,
+    "ca": "10",
+    "cost": ""
+  },
+  {
+    "name": "Targen Khovidia, Rebellious Tactician",
     "aspect": "Cunning",
-    "cost": "4MaMa",
-    "text": "Destroy all territories, and units and territory improvements on those territories. Each player draws and plays three more territories.",
+    "rarity": "Unique",
+    "type": [
+      "Human",
+      "Rebel",
+      "Leader"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Once per turn you may pay 1 Mana to play a rebel unit hidden on a territory you control. If they don't have a reveal cost, their reveal cost is equal to their production cost.\nHidden Units cost (2) less to reveal",
+    "bName": "Subversion",
+    "btext": "Reveal all Rebels you control, they gain shield break until end of turn",
+    "cost": "3MaMa",
     "power": null,
     "toughness": null,
-    "image": "assets/frame.png"
+    "has_back": true
+  },
+  {
+    "name": "Xzaldra, Jagged Queen",
+    "aspect": "Domination",
+    "rarity": "Unique",
+    "type": [
+      "Dragonborn",
+      "Paladin",
+      "Queen",
+      "Leader"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Exhaust this card: You may move one Domination or one Paladin unit to a territory you can move to.",
+    "bName": "Gravity Well",
+    "btext": "Deal 3 damage to all Units on target territory, they become rooted until your next turn",
+    "cost": "3MeMe",
+    "power": null,
+    "toughness": null,
+    "has_back": true
+  },
+  {
+    "name": "Bustling Village",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Village",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Rocky Peaks",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Mountain",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Rolling Hills",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Hills",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Squelching Marsh",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Swamp",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Winding Coast",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Ocean",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Windswept Plains",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Plains",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Woodland Expanse",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Forest",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Field of Honor",
+    "aspect": null,
+    "rarity": "Rare",
+    "type": [
+      "Stadium",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "When a unit moves here, as long as you control this territory you may have them challenge an enemy unit",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "The Obsidian Ward",
+    "aspect": null,
+    "rarity": "Rare",
+    "type": [
+      "City",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "This territory can hold 2 extra hidden units",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Raging Volcano",
+    "aspect": "N/A",
+    "rarity": "Uncommon",
+    "type": [
+      "Mountain",
+      "Volcano",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "Non High Lander Units without Flying take 1 damage when moving to this territory",
+    "has_back": false,
+    "is": "2",
+    "cost": ""
+  },
+  {
+    "name": "Khalaran, Home of the High Order",
+    "aspect": "Honor",
+    "rarity": "Unique",
+    "type": [
+      "City",
+      "Holy",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": null,
+    "has_back": false,
+    "is": "4",
+    "cost": ""
+  },
+  {
+    "name": "Khovidia, Last Bastion of Independence",
+    "aspect": "Resilience",
+    "rarity": "Unique",
+    "type": [
+      "City",
+      "Leyline Node",
+      "Arcane",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "Hidden Cards here gain Veiled",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": null,
+    "aspect": "",
+    "rarity": null,
+    "type": [],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Farmland",
+    "aspect": "",
+    "rarity": "Common",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Food"
+    ],
+    "exhaust": "1 Food",
+    "expend": "1 Food",
+    "cost": ""
+  },
+  {
+    "name": "Geomancer’s Forge",
+    "aspect": "",
+    "rarity": "Rare",
+    "type": [
+      "Production "
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Runestone Circle",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production ",
+      "Hybrid"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Leyline Conduit",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production ",
+      "Siphon"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Mana Siphon",
+    "aspect": "",
+    "rarity": "Common",
+    "type": [
+      "Production",
+      "Basic"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Mana"
+    ],
+    "exhaust": "1 Mana",
+    "expend": "1 Mana",
+    "cost": ""
+  },
+  {
+    "name": "Spell Nexus",
+    "aspect": "",
+    "rarity": "Rare",
+    "type": [
+      "Production ",
+      "Nexus"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Untitled",
+    "aspect": "",
+    "rarity": "",
+    "type": [],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Iron Mine",
+    "aspect": "",
+    "rarity": "Common",
+    "type": [
+      "Production",
+      "Basic"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Metals"
+    ],
+    "exhaust": "1 Metals",
+    "expend": "1 Metals",
+    "cost": ""
+  },
+  {
+    "name": "Front Line Quarry",
+    "aspect": "",
+    "rarity": "Rare",
+    "type": [
+      "Production ",
+      "Quarry"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Mason’s Guild",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production ",
+      "Guild"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Quarry Watchtower",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production ",
+      "Quarry"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Stone Quarry",
+    "aspect": "",
+    "rarity": "Common",
+    "type": [
+      "Production",
+      "Basic"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Stone"
+    ],
+    "exhaust": "1 Stone",
+    "expend": "1 Stone",
+    "cost": ""
+  },
+  {
+    "name": "Lumbermill",
+    "aspect": "",
+    "rarity": "Common",
+    "type": [
+      "Production",
+      "Basic"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Wood"
+    ],
+    "exhaust": "1 Wood",
+    "expend": "1 Wood",
+    "cost": ""
+  },
+  {
+    "name": "Forced March",
+    "aspect": "Domination",
+    "rarity": "Uncommon",
+    "type": [
+      "Action"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Move 1 exhausted unit you control to a friendly or unoccupied territory. This unit gets -1 toughness until your next turn",
+    "has_back": false,
+    "cost": "2Me",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Marked for Death",
+    "aspect": "Domination",
+    "rarity": "Common",
+    "type": [
+      "Action",
+      "Magical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Target unit becomes vulnerable",
+    "has_back": false,
+    "cost": "2Me",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Overrule",
+    "aspect": "Honor",
+    "rarity": "Common",
+    "type": [
+      "Action"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Remove target Edict",
+    "has_back": false,
+    "cost": "(2)",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Rain of Arrows",
+    "aspect": "Domination",
+    "rarity": "Common",
+    "type": [
+      "Action",
+      "Physical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Deal 2 damage to each unit on target territory",
+    "has_back": false,
+    "cost": "2Me",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Recruitment Drive",
+    "aspect": "Honor",
+    "rarity": "Common",
+    "type": [
+      "Action"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Create 2 1/1 Recruit tokens at your citadel",
+    "has_back": false,
+    "cost": "1Fo",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Sanctioned Fight",
+    "aspect": "Honor",
+    "rarity": "Common",
+    "type": [
+      "Action"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Target unit you control challenges a target unit your opponent controls",
+    "has_back": false,
+    "cost": "(1)",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Unchecked Power",
+    "aspect": "Cunning",
+    "rarity": "Rare",
+    "type": [
+      "Action"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Destroy all territories, and units and territory improvements on those territories. Each player draws and plays three more territories.",
+    "has_back": false,
+    "cost": "4MaMa",
+    "power": null,
+    "toughness": null
   },
   {
     "name": "Guerrilla Warfare",
-    "type": ["Edict"],
-    "rarity": "Rare",
     "aspect": "Cunning",
+    "rarity": "Rare",
+    "type": [
+      "Edict"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "When a hidden unit is revealed it gets +1 power and preemptive strike",
+    "has_back": false,
     "cost": "2MaMa",
-    "text": "When a hidden unit is revealed it gets +1 power and preemptive strike.",
     "power": null,
-    "toughness": null,
-    "image": "assets/frame.png"
+    "toughness": null
   },
   {
-    "name": "Restricted Supply Routes",
-    "type": ["Reaction"],
-    "rarity": "Uncommon",
-    "aspect": "Cunning",
-    "cost": "2Ma",
-    "text": "Production cards can't be expended this turn.",
+    "name": "Tithes",
+    "aspect": "Domination",
+    "rarity": "Rare",
+    "type": [
+      "Edict"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Exhaust a temple you control: Suppress that temple and gain 1 gold",
+    "has_back": false,
+    "cost": "3MeMe",
     "power": null,
-    "toughness": null,
-    "image": "assets/frame.png"
+    "toughness": null
+  },
+  {
+    "name": "Worker's Compensation",
+    "aspect": "Honor",
+    "rarity": "Rare",
+    "type": [
+      "Edict"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Production cards can't be expended",
+    "has_back": false,
+    "cost": "4FoFo",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Jagged Crown",
+    "aspect": "Domination",
+    "rarity": "Unique",
+    "type": [
+      "Gear",
+      "Equipment"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "When this Gear enters you may attach it to a unit you control at your Citadel\nPaladin and Dragonborn Units on this Unit's Territory get +2/+2\n3 Domination: Move all friendly units in this territory to an adjacent territory.",
+    "has_back": false,
+    "cost": "(6)",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Restrict Supply Routes",
+    "aspect": "Cunning",
+    "rarity": "Uncommon",
+    "type": [
+      "Reaction"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Production cards can't be expended this turn",
+    "has_back": false,
+    "cost": "2Ma",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Shield Wall",
+    "aspect": "Resilience",
+    "rarity": "Uncommon",
+    "type": [
+      "Reaction"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Units at target territory take no physical damage this skirmish",
+    "has_back": false,
+    "cost": "2St",
+    "power": null,
+    "toughness": null
   },
   {
     "name": "Silence",
-    "type": ["Reaction"],
-    "rarity": "Uncommon",
     "aspect": "Cunning",
+    "rarity": "Uncommon",
+    "type": [
+      "Reaction"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Suppress target card until that player's next turn",
+    "has_back": false,
     "cost": "2Ma",
-    "text": "Suppress target card until that player's next turn.",
     "power": null,
-    "toughness": null,
-    "image": "assets/frame.png"
+    "toughness": null
   },
   {
     "name": "Thought Shatter",
-    "type": ["Reaction"],
-    "rarity": "Common",
     "aspect": "Cunning",
+    "rarity": "Common",
+    "type": [
+      "Reaction"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Prevent target Action or Reaction card",
+    "has_back": false,
     "cost": "1Ma",
-    "text": "Prevent target Action or Reaction card.",
     "power": null,
-    "toughness": null,
-    "image": "assets/frame.png"
+    "toughness": null
   },
   {
     "name": "Veto",
-    "type": ["Reaction"],
-    "rarity": "Common",
     "aspect": "Cunning",
+    "rarity": "Common",
+    "type": [
+      "Reaction"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Prevent target Edict, Action or Territory improvement",
+    "has_back": false,
     "cost": "MaMa",
-    "text": "Prevent target Edict, Action or Territory improvement.",
     "power": null,
-    "toughness": null,
-    "image": "assets/frame.png"
+    "toughness": null
+  },
+  {
+    "name": "Chapel of Honor",
+    "aspect": "Honor",
+    "rarity": "Uncommon",
+    "type": [
+      "Territory Improvement",
+      "Temple"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Reduce the cost of Honor spells by (1)",
+    "has_back": false,
+    "cost": "1FoFo",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Guard Post",
+    "aspect": "Honor",
+    "rarity": "Uncommon",
+    "type": [
+      "Territory Improvement",
+      "Fortification"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "When this territory is attacked create 2 1/1 recruit tokens they leave the battlefield at the end of the skirmish",
+    "has_back": false,
+    "cost": "2Fo",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Hidden Stash",
+    "aspect": "Resilience",
+    "rarity": "Rare",
+    "type": [
+      "Territory Improvement",
+      "Rebel"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Hidden(1 Stone) Reveal ((2) 1 Stone)\nWhen this card is revealed units you control on this territory gain +1 attack\nRebel units here get shielded 2",
+    "has_back": false,
+    "cost": "2StSt",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Palisade",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Territory Improvement",
+      "Fortification"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Units without saboteur or flying cannot deal damage to friendly units here",
+    "has_back": false,
+    "cost": "2Wo",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Recruitment Post",
+    "aspect": "Honor",
+    "rarity": "Rare",
+    "type": [
+      "Territory Improvement",
+      "Fortification"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "You may play a unit on this territory once per turn",
+    "has_back": false,
+    "cost": "1Fo",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Wall",
+    "aspect": "N/A",
+    "rarity": "Uncommon",
+    "type": [
+      "Territory Improvement",
+      "Fortification"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Units without saboteur or flying cannot deal damage to friendly units here",
+    "has_back": false,
+    "cost": "2StSt",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Backstreet Bruiser",
+    "aspect": "Resilience",
+    "rarity": "Common",
+    "type": [
+      "Unit",
+      "Rebel",
+      "Physical",
+      "Fighter"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Shielded 1",
+    "has_back": false,
+    "cost": "3St",
+    "power": null,
+    "toughness": null
   },
   {
     "name": "Gryffhound Pack",
-    "type": ["Companion", "Unit", "Physical"],
-    "rarity": "Common",
     "aspect": "Cunning",
+    "rarity": "Common",
+    "type": [
+      "Companion",
+      "Unit",
+      "Physical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Bond",
+    "has_back": false,
     "cost": "3MaMa",
-    "text": "Bond.",
-    "power": 3,
-    "toughness": 4,
-    "image": "assets/frame.png"
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Khalaran Gate Keepers",
+    "aspect": "Honor",
+    "rarity": "Common",
+    "type": [
+      "Unit",
+      "Guard",
+      "Paladin",
+      "Physical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Shielded 1",
+    "has_back": false,
+    "cost": "4FoFo",
+    "power": null,
+    "toughness": null
   },
   {
     "name": "Khovidian Provoker",
-    "type": ["Human", "Rebel", "Unit", "Physical"],
-    "rarity": "Common",
     "aspect": "Cunning",
-    "cost": "1Ma",
+    "rarity": "Common",
+    "type": [
+      "Human",
+      "Rebel",
+      "Unit",
+      "Physical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
     "text": "",
-    "power": 2,
-    "toughness": 1,
-    "image": "assets/frame.png"
+    "has_back": false,
+    "cost": "1Ma",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Pyrria's Blitzers",
+    "aspect": "Domination",
+    "rarity": "Common",
+    "type": [
+      "Unit",
+      "Physical",
+      "Dragonborn"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Charge 1",
+    "has_back": false,
+    "cost": "2Me",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Xzaaldrian Guard",
+    "aspect": "Honor",
+    "rarity": "Common",
+    "type": [
+      "Physical",
+      "Unit",
+      "Guard"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "cost": "FoFo",
+    "power": null,
+    "toughness": null
   },
   {
     "name": "Backstreet Informer",
-    "type": ["Rebel", "Investigator", "Unit"],
-    "rarity": "Rare",
     "aspect": "Cunning",
-    "cost": "3MaMa",
+    "rarity": "Rare",
+    "type": [
+      "Rebel",
+      "Investigator"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
     "text": "When this unit moves to a City or Village territory you may reveal a hidden card there. If you do draw a card.",
-    "power": 1,
-    "toughness": 4,
-    "image": "assets/frame.png"
+    "has_back": false,
+    "cost": "3MaMa",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Bjorland Mercenaries",
+    "aspect": "N/A",
+    "rarity": "Uncommon",
+    "type": [
+      "Mercenary",
+      "High Lander",
+      "Unit",
+      "Physical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Pay 1 Gold: Give this unit +1/+1 indefinitely\nPay 2 Gold: Gain control of this unit (any player may activate this ability)",
+    "has_back": false,
+    "cost": "MeMeMe",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Dracolith Riders",
+    "aspect": "Domination",
+    "rarity": "Rare",
+    "type": [
+      "Dragonborn",
+      "Unit",
+      "Cavalry",
+      "Physical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Haste\nThis Unit may move to an additional territory if that territory is occupied",
+    "has_back": false,
+    "cost": "2MeMe",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Underground Medic",
+    "aspect": "Resilience",
+    "rarity": "Rare",
+    "type": [
+      "Unit",
+      "Citizen",
+      "Medic",
+      "Magical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": " 1 Stone: Heal target unit 2 damage",
+    "has_back": false,
+    "cost": "2StSt",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Duel Coordinator",
+    "aspect": "Honor",
+    "rarity": "Uncommon",
+    "type": [
+      "Unit",
+      "Paladin",
+      "Physical",
+      "Trainer"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "(1) 1 Food Exhaust: Another Target Unit you control Challenges Target unit an opponent controls.",
+    "has_back": false,
+    "cost": "3MeMe",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Exuberant Spectator",
+    "aspect": "Domination",
+    "rarity": "Uncommon",
+    "type": [
+      "Unit",
+      "Physical",
+      "Citizen"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "When a Unit you control wins a challenge draw a card. Do this once per turn.",
+    "has_back": false,
+    "cost": "2Fo",
+    "power": null,
+    "toughness": null
   },
   {
     "name": "Subversive Saboteur",
-    "type": ["Rebel", "Unit", "Physical"],
-    "rarity": "Uncommon",
     "aspect": "Cunning",
+    "rarity": "Uncommon",
+    "type": [
+      "Rebel",
+      "Unit",
+      "Physical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Hidden (1 Mana) Reveal ( (2) )\nWhen this Unit is revealed deal twice X damage to an adjacent territory improvement, or X damage to an adjacent Unit, where X is this unit's power.",
+    "has_back": false,
     "cost": "2MaMa",
-    "text": "Hidden (1 Mana) Reveal ((2))\nWhen this Unit is revealed deal twice X damage to an adjacent territory improvement, or X damage to an adjacent Unit, where X is this unit's power.",
-    "power": 2,
-    "toughness": 3,
-    "image": "assets/frame.png"
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Xzaaldrian Militia",
+    "aspect": "Honor",
+    "rarity": "Uncommon",
+    "type": [
+      "Unit",
+      "Physical",
+      "Militia"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "When defending a territory on your side of the board this unit gains +2 toughness until the end of the skirmish",
+    "has_back": false,
+    "cost": "1FoFo",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Aurelius Maximus",
+    "aspect": "Resilience",
+    "rarity": "Unique",
+    "type": [
+      "Human",
+      "Fighter",
+      "Rebel",
+      "Unit",
+      "Physical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Shielded 1 \nOther friendly Rebel Units on this Unit’s territory gain Withdraw and Preemptive Strike",
+    "has_back": false,
+    "cost": "3StSt",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": null,
+    "aspect": null,
+    "rarity": null,
+    "type": [],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Avatar of Hevana",
+    "aspect": "",
+    "rarity": "",
+    "type": [],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Avatar of Lucas",
+    "aspect": "",
+    "rarity": "",
+    "type": [],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Avatar of Zeddicus",
+    "aspect": "",
+    "rarity": "",
+    "type": [],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Pyrria, High Paladin of Edawn",
+    "aspect": "Honor",
+    "rarity": "Unique",
+    "type": [
+      "Dragonborn",
+      "Unit",
+      "Physical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "When a card you control becomes the target of a Reaction you may pay 2 Metals to prevent that card.",
+    "has_back": false,
+    "cost": "3MeMe",
+    "power": null,
+    "toughness": null
   },
   {
     "name": "Targen, In the Know",
-    "type": ["Unit", "Human", "Physical"],
-    "rarity": "Unique",
     "aspect": "Cunning",
-    "cost": "3MaMa",
+    "rarity": "Unique",
+    "type": [
+      "Unit",
+      "Human",
+      "Physical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
     "text": "Hidden (1 Mana) Reveal ((2) 1 Mana)\nWhen you reveal this card, draw X cards where X is the number of hidden cards you control\nWhen you play a card Hidden on a territory draw a card, do this once per territory.",
-    "power": 2,
-    "toughness": 5,
-    "image": "assets/frame.png"
+    "has_back": false,
+    "cost": "3MaMa",
+    "power": null,
+    "toughness": null
   },
   {
-    "name": "Shield wall",
-    "type": ["Reaction"],
-    "rarity": "Uncommon",
-    "aspect": "Resilience",
-    "cost": "2St",
-    "text": "Units at target territory take no physical damage this skirmish.",
+    "name": "Xarion, High Paladin of Xzarine",
+    "aspect": "Honor",
+    "rarity": "Unique",
+    "type": [
+      "Paladin",
+      "Dragonborn",
+      "Unit",
+      "Physical"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "Shielded 2\nWhen this unit enters and moves Challenge a target enemy unit. \nThis Unit gains 1 power when challenging",
+    "has_back": false,
+    "cost": "3FoFo",
     "power": null,
-    "toughness": null,
-    "image": "assets/frame.png"
+    "toughness": null
   }
 ]
-

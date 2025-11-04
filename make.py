@@ -1,6 +1,7 @@
 import json, pathlib, asyncio
 from jinja2 import Template
 from playwright.async_api import async_playwright
+import base64
 
 root = pathlib.Path(__file__).parent
 cards = json.loads((root/"data.json").read_text(encoding="utf-8"))
@@ -19,8 +20,11 @@ async def html_to_pdf(html_str, out_path):
         await page.pdf(path=out_path, print_background=True)
         await browser.close()
 
-front_html = render_html("template_fronts.html", cards=cards)
-back_html  = render_html("template_back.html",  count=len(cards))
+base = root.as_uri()  # e.g., file:///C:/Users/kopfb/Desktop/cardGenerator
+
+front_html = render_html("template_fronts.html", cards=cards, base_href=base)
+back_html  = render_html("template_back.html",  cards=cards, base_href=base)
+
 
 asyncio.run(html_to_pdf(front_html, root/"cards_fronts.pdf"))
 asyncio.run(html_to_pdf(back_html,  root/"cards_backs.pdf"))

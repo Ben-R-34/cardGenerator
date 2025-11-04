@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
 <head>
+  <base href="{{ base_href }}/">
 <meta charset="utf-8">
 <style>
   :root {
     --card-w: 2.5in;
-    --card-h: 3.42in;
+    --card-h: 3.403in;
     --gap: 0.1in;
     --bleed: 0in;     /* change to 0.125in for print-shop bleed */
     --safe: 0.125in;  /* keep important text inside this inset */
@@ -56,6 +57,15 @@
     grid-template-columns: 1fr auto 1fr;
     align-items: end;
   }
+  .card.landscape { width: var(--card-w); height: var(--card-h); }
+  .card.landscape .card-inner {
+    transform: rotate(90deg);
+    transform-origin: center;
+    width: var(--card-h); height: var(--card-w);
+    left: calc(50% - var(--card-h)/2); top: calc(50% - var(--card-w)/2);
+    padding: var(--safe);
+  }
+
   .header { display:flex; justify-content:space-between; font-weight:300; }
   .type   { margin: 4pt 0; font-size: 9pt; color:#333; }
   .rules  { font-size: 9pt; line-height: 1.25; white-space: pre-wrap; }
@@ -68,19 +78,25 @@
 <body>
   <div class="sheet">
     {% for c in cards %}
-    <div class="card">
-      {% if c.image %}<div class="art" style="background-image:url('{{ c.image }}')"></div>{% endif %}
+    <div class="card {{ c.orientation }}">
       <div class="card-inner">
         <div class="header">
           <div>{{ c.name }}</div>
-          <div class="cost">{{ c.cost }}</div>
+          {% if not c.has_back and c.cost %}
+            <div class="cost">{{ c.cost }}</div>
+          {% endif %}
         </div>
+
         <div class="type">{{ c.type | join(' ') }}</div>
+
         <div class="rules">{{ c.text }}</div>
+
         <div class="footer">
-            <div class="rarity">{{ c.rarity }}</div>
-            <div class="aspect">{{ c.aspect }}</div>
-            {% if c.power and c.toughness %}<div class="pt">{{ c.power }}/{{ c.toughness }}</div>{% endif %}
+          <div class="rarity">{{ c.rarity }}</div>
+          <div class="aspect">{{ c.aspect }}</div>
+          {% if c.power and c.toughness %}
+            <div class="pt">{{ c.power }}/{{ c.toughness }}</div>
+          {% endif %}
         </div>
       </div>
     </div>
