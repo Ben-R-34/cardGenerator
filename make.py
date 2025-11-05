@@ -1,32 +1,62 @@
-import json, pathlib, asyncio
+import json, pathlib, asyncio, base64
 from jinja2 import Template
 from playwright.async_api import async_playwright
-import base64
 
 root = pathlib.Path(__file__).parent
-cards = json.loads((root/"data.json").read_text(encoding="utf-8"))
 
-def render_html(template_name, **ctx):
-    tmpl = Template((root/template_name).read_text(encoding="utf-8"))
-    return tmpl.render(**ctx)
+# Load data.json (utf-8 with BOM fallback)
+raw = (root/"data.json").read_bytes()
+try:
+    text = raw.decode("utf-8")
+except UnicodeDecodeError:
+    text = raw.decode("utf-8-sig", errors="ignore")
+cards = json.loads(text)
 
-async def html_to_pdf(html_str, out_path):
-    out_path = str(out_path)
+def render(template_file, **ctx):
+    tpl = Template((root/template_file).read_text(encoding="utf-8"))
+    return tpl.render(**ctx)
+
+# Inline icon for non-leader backs
+icon_bytes = (root/"assets/Project_Conquer.png").read_bytes()
+ICON_DATA_URL = "data:image/png;base64," + base64.b64encode(icon_bytes).decode("ascii")
+
+PAGE_SIZE = 70        # <-- 70 cards per PNG
+COLS = 10             # 10 columns × 7 rows
+
+BLANK = {
+    "name": "", "text": "", "aspect": "", "rarity": "",
+    "type": [], "cost": "", "power": None, "toughness": None,
+    "orientation": "portrait", "has_back": False, "is_placeholder": True
+}
+
+def chunk(lst, n):
+    for i in range(0, len(lst), n):
+        yield lst[i:i+n]
+
+async def build_pngs():
+    pages = list(chunk(cards, PAGE_SIZE))
     async with async_playwright() as p:
         browser = await p.chromium.launch()
         page = await browser.new_page()
-        # Load HTML via data URL so assets resolve via base tag
-        await page.set_content(html_str, wait_until="load")
-        await page.pdf(path=out_path, print_background=True)
+
+        for i, subset in enumerate(pages, start=1):
+            # >>> pad to 70 <<<
+            pad = PAGE_SIZE - len(subset)
+            if pad > 0:
+                subset = subset + [BLANK.copy() for _ in range(pad)]
+            
+            # FRONTS
+            front_html = render("template_fronts.html", cards=subset, cols=COLS)
+            await page.set_content(front_html, wait_until="networkidle")
+            await page.screenshot(path=str(root/f"cards_fronts_p{i:02d}.png"), full_page=True)
+
+            # BACKS (same subset & order)
+            back_html = render("template_back.html", cards=subset, cols=COLS, icon_data_url=ICON_DATA_URL)
+            await page.set_content(back_html, wait_until="networkidle")
+            await page.screenshot(path=str(root/f"cards_backs_p{i:02d}.png"), full_page=True)
+
+            print(f"✅ Sheet {i}: {len(subset)} cards")
         await browser.close()
 
-base = root.as_uri()  # e.g., file:///C:/Users/kopfb/Desktop/cardGenerator
-
-front_html = render_html("template_fronts.html", cards=cards, base_href=base)
-back_html  = render_html("template_back.html",  cards=cards, base_href=base)
-
-
-asyncio.run(html_to_pdf(front_html, root/"cards_fronts.pdf"))
-asyncio.run(html_to_pdf(back_html,  root/"cards_backs.pdf"))
-print("Wrote cards_fronts.pdf and cards_backs.pdf")
-
+if __name__ == "__main__":
+    asyncio.run(build_pngs())

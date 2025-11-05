@@ -10,6 +10,7 @@
     --gap: 0.1in;
     --bleed: 0in;     /* change to 0.125in for print-shop bleed */
     --safe: 0.125in;  /* keep important text inside this inset */
+    --cols: 10;
   }
 
   @page { size: Letter; margin: 0.25in; }
@@ -18,7 +19,7 @@
 
   .sheet {
     display: grid;
-    grid-template-columns: repeat(3, var(--card-w));
+    grid-template-columns: repeat(var(--cols), var(--card-w));
     grid-auto-rows: var(--card-h);
     gap: var(--gap);
   }
@@ -76,7 +77,7 @@
 </style>
 </head>
 <body>
-  <div class="sheet">
+  <div class="sheet" style="--cols: {{cols | default(10)}};">
     {% for c in cards %}
     <div class="card {{ c.orientation }}">
       <div class="card-inner">

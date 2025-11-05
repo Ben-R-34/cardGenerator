@@ -4,17 +4,19 @@
   <base href="{{ base_href }}/">
 <meta charset="utf-8">
 <style>
+  html, body {margin: 0; padding: 0;}
   :root {
     --card-w: 2.5in;
     --card-h: 3.403in;
     --gap: 0.1in;
     --bleed: 0in;  /* match fronts */
+    --cols: 10;
   }
   @page { size: Letter; margin: 0.25in; }
   html, body { margin: 0; }
   .sheet {
     display: grid;
-    grid-template-columns: repeat(3, var(--card-w));
+    grid-template-columns: repeat(var(--cols), var(--card-w));
     grid-auto-rows: var(--card-h);
     gap: var(--gap);
   }
@@ -51,7 +53,7 @@
 </style>
 </head>
 <body>
-  <div class="sheet">
+  <div class="sheet" style="--cols: {{cols | default(10)}};">
   {% for c in cards %}
   <div class="card {{ c.orientation }}">
     <div class="inner {% if not c.has_back %}blank{% endif %}">
