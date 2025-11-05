@@ -286,59 +286,162 @@
     "cost": ""
   },
   {
+    "name": "Knight's Hall",
+    "aspect": "",
+    "rarity": "Rare",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Food"
+    ],
+    "exhaust": "1 Food",
+    "expend": "1 Food. Units at target Territory you control gain +1 Shield until your next turn.",
+    "cost": ""
+  },
+  {
+    "name": "Plains Granary",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Food"
+    ],
+    "exhaust": "1 Food",
+    "expend": "1 Food, if you control a Plains territory add an additional Food",
+    "cost": ""
+  },
+  {
+    "name": "Training Grounds",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Food"
+    ],
+    "exhaust": "1 Food",
+    "expend": "1 Food. A Unit you control gains +1 Attack until the end of your turn",
+    "cost": ""
+  },
+  {
+    "name": "Frontline Supply Post",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Food",
+      "Metals"
+    ],
+    "exhaust": "1 Food or 1 Metals",
+    "expend": "1 Food or 1 Metals",
+    "cost": ""
+  },
+  {
     "name": "Geomancer’s Forge",
     "aspect": "",
     "rarity": "Rare",
     "type": [
-      "Production "
+      "Production"
     ],
     "image": "assets/frame.png",
     "orientation": "portrait",
-    "text": "",
+    "text": null,
     "has_back": false,
-    "cost": "",
-    "power": null,
-    "toughness": null
+    "mat": [
+      "Stone",
+      "Mana"
+    ],
+    "exhaust": "1 Stone or 1 Mana",
+    "expend": "1 Stone or 1 Mana. If you spent both mana and stone this turn, draw a card",
+    "cost": ""
+  },
+  {
+    "name": "Holy Forge",
+    "aspect": "",
+    "rarity": "Rare",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Food",
+      "Metals"
+    ],
+    "exhaust": "1 Food or 1 Metals",
+    "expend": "1 Food or 1 Metals. If you have spent both a Food and a Metals this turn draw a card. (spending food or metals on generic costs doesn't count towards this)",
+    "cost": ""
   },
   {
     "name": "Runestone Circle",
     "aspect": "",
     "rarity": "Uncommon",
     "type": [
-      "Production ",
+      "Production",
       "Hybrid"
     ],
     "image": "assets/frame.png",
     "orientation": "portrait",
     "text": null,
     "has_back": false,
-    "cost": "",
-    "power": null,
-    "toughness": null
+    "mat": [
+      "Stone",
+      "Mana"
+    ],
+    "exhaust": "1 Stone or 1 Mana",
+    "expend": "1 Stone or 1 Mana",
+    "cost": ""
   },
   {
     "name": "Leyline Conduit",
     "aspect": "",
     "rarity": "Uncommon",
     "type": [
-      "Production ",
-      "Siphon"
+      "Siphon",
+      "Production"
     ],
     "image": "assets/frame.png",
     "orientation": "portrait",
     "text": "",
     "has_back": false,
-    "cost": "",
-    "power": null,
-    "toughness": null
+    "mat": [
+      "Mana"
+    ],
+    "exhaust": "1 Mana",
+    "expend": "1 Mana. If you control an Arcane territory gain an additional Mana",
+    "cost": ""
   },
   {
     "name": "Mana Siphon",
     "aspect": "",
     "rarity": "Common",
     "type": [
-      "Production",
-      "Basic"
+      "Basic",
+      "Production"
     ],
     "image": "assets/frame.png",
     "orientation": "portrait",
@@ -356,29 +459,19 @@
     "aspect": "",
     "rarity": "Rare",
     "type": [
-      "Production ",
-      "Nexus"
+      "Nexus",
+      "Production"
     ],
     "image": "assets/frame.png",
     "orientation": "portrait",
     "text": "",
     "has_back": false,
-    "cost": "",
-    "power": null,
-    "toughness": null
-  },
-  {
-    "name": "Untitled",
-    "aspect": "",
-    "rarity": "",
-    "type": [],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": "",
-    "has_back": false,
-    "cost": "",
-    "power": null,
-    "toughness": null
+    "mat": [
+      "Mana"
+    ],
+    "exhaust": "1 Mana",
+    "expend": "1 Mana. The next card you play this turn costs 1 less",
+    "cost": ""
   },
   {
     "name": "Iron Mine",
@@ -400,52 +493,133 @@
     "cost": ""
   },
   {
+    "name": "Mithril Mine",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Metals"
+    ],
+    "exhaust": "1 Metals",
+    "expend": "1 Metals. If you control a Mountain Territory add an additional Metals.",
+    "cost": ""
+  },
+  {
+    "name": "Siege Workshop",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Metals"
+    ],
+    "exhaust": "1 Metals",
+    "expend": "1 Metals. Deal 1 damage to a Structure in an adjacent Territory.",
+    "cost": ""
+  },
+  {
+    "name": "Trophy Grounds",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Metals"
+    ],
+    "exhaust": "1 Metals",
+    "expend": "1 Metals. If you won a skirmish this turn, draw a card.",
+    "cost": ""
+  },
+  {
+    "name": "Warfoundry",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Metals"
+    ],
+    "exhaust": "1 Metals",
+    "expend": "1 Metals. Move a Unit you control to an unoccupied or friendly territory",
+    "cost": ""
+  },
+  {
     "name": "Front Line Quarry",
     "aspect": "",
     "rarity": "Rare",
     "type": [
-      "Production ",
-      "Quarry"
+      "Quarry",
+      "Production"
     ],
     "image": "assets/frame.png",
     "orientation": "portrait",
     "text": "",
     "has_back": false,
-    "cost": "",
-    "power": null,
-    "toughness": null
+    "mat": [
+      "Stone"
+    ],
+    "exhaust": "1 Stone",
+    "expend": "1 Stone. Choose a territory, all territory improvements there heal 2 health",
+    "cost": ""
   },
   {
     "name": "Mason’s Guild",
     "aspect": "",
     "rarity": "Uncommon",
     "type": [
-      "Production ",
-      "Guild"
+      "Guild",
+      "Production"
     ],
     "image": "assets/frame.png",
     "orientation": "portrait",
     "text": "",
     "has_back": false,
-    "cost": "",
-    "power": null,
-    "toughness": null
+    "mat": [
+      "Stone"
+    ],
+    "exhaust": "1 Stone",
+    "expend": "1 Stone. If you control a City territory gain an additional stone",
+    "cost": ""
   },
   {
     "name": "Quarry Watchtower",
     "aspect": "",
     "rarity": "Uncommon",
     "type": [
-      "Production ",
-      "Quarry"
+      "Quarry",
+      "Production"
     ],
     "image": "assets/frame.png",
     "orientation": "portrait",
     "text": "",
     "has_back": false,
-    "cost": "",
-    "power": null,
-    "toughness": null
+    "mat": [
+      "Stone"
+    ],
+    "exhaust": "1 Stone",
+    "expend": "1 Stone. If you control a fortification deal 1 damage to an enemy unit",
+    "cost": ""
   },
   {
     "name": "Stone Quarry",
@@ -527,7 +701,7 @@
     "orientation": "portrait",
     "text": "Remove target Edict",
     "has_back": false,
-    "cost": "(2)",
+    "cost": "1Fo",
     "power": null,
     "toughness": null
   },
@@ -573,7 +747,7 @@
     "orientation": "portrait",
     "text": "Target unit you control challenges a target unit your opponent controls",
     "has_back": false,
-    "cost": "(1)",
+    "cost": "1Fo",
     "power": null,
     "toughness": null
   },
@@ -649,7 +823,7 @@
     "orientation": "portrait",
     "text": "When this Gear enters you may attach it to a unit you control at your Citadel\nPaladin and Dragonborn Units on this Unit's Territory get +2/+2\n3 Domination: Move all friendly units in this territory to an adjacent territory.",
     "has_back": false,
-    "cost": "(6)",
+    "cost": "5Me",
     "power": null,
     "toughness": null
   },

@@ -88,14 +88,24 @@
         </div>
 
         <div class="type">{{ c.type | join(' ') }}</div>
+      
 
         <div class="rules">{{ c.text }}</div>
+        {% if c.exhaust %}
+          <div class="rules">Exhaust: {{ c.exhaust }}</div>
+          <div class="rules">Expend: {{ c.expend }}</div>
+          
+        {% endif %}
 
         <div class="footer">
           <div class="rarity">{{ c.rarity }}</div>
           <div class="aspect">{{ c.aspect }}</div>
           {% if c.power and c.toughness %}
             <div class="pt">{{ c.power }}/{{ c.toughness }}</div>
+          {% elif c.health %}
+            <div class="pt">{{ c.health }}/{{ c.shield }}/{{c.ca}}</div>
+          {% elif c.is %}
+            <div class="pt">Imp Slots: {{ c.is }}</div>
           {% endif %}
         </div>
       </div>
