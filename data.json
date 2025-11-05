@@ -27,7 +27,7 @@
     "text": "Rebel Units you control gain Shielded 1 and +1 toughness",
     "has_back": false,
     "health": "25",
-    "shield": null,
+    "shield": "0",
     "ca": "10",
     "cost": ""
   },
@@ -69,595 +69,6 @@
     "power": null,
     "toughness": null,
     "has_back": true
-  },
-  {
-    "name": "Bustling Village",
-    "aspect": "N/A",
-    "rarity": "Common",
-    "type": [
-      "Village",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": "",
-    "has_back": false,
-    "is": "3",
-    "cost": ""
-  },
-  {
-    "name": "Rocky Peaks",
-    "aspect": "N/A",
-    "rarity": "Common",
-    "type": [
-      "Mountain",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": "",
-    "has_back": false,
-    "is": "3",
-    "cost": ""
-  },
-  {
-    "name": "Rolling Hills",
-    "aspect": "N/A",
-    "rarity": "Common",
-    "type": [
-      "Hills",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": "",
-    "has_back": false,
-    "is": "3",
-    "cost": ""
-  },
-  {
-    "name": "Squelching Marsh",
-    "aspect": "N/A",
-    "rarity": "Common",
-    "type": [
-      "Swamp",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": "",
-    "has_back": false,
-    "is": "3",
-    "cost": ""
-  },
-  {
-    "name": "Winding Coast",
-    "aspect": "N/A",
-    "rarity": "Common",
-    "type": [
-      "Ocean",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": "",
-    "has_back": false,
-    "is": "3",
-    "cost": ""
-  },
-  {
-    "name": "Windswept Plains",
-    "aspect": "N/A",
-    "rarity": "Common",
-    "type": [
-      "Plains",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": "",
-    "has_back": false,
-    "is": "3",
-    "cost": ""
-  },
-  {
-    "name": "Woodland Expanse",
-    "aspect": "N/A",
-    "rarity": "Common",
-    "type": [
-      "Forest",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": "",
-    "has_back": false,
-    "is": "3",
-    "cost": ""
-  },
-  {
-    "name": "Field of Honor",
-    "aspect": null,
-    "rarity": "Rare",
-    "type": [
-      "Stadium",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": "When a unit moves here, as long as you control this territory you may have them challenge an enemy unit",
-    "has_back": false,
-    "is": "3",
-    "cost": ""
-  },
-  {
-    "name": "The Obsidian Ward",
-    "aspect": null,
-    "rarity": "Rare",
-    "type": [
-      "City",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": "This territory can hold 2 extra hidden units",
-    "has_back": false,
-    "is": "3",
-    "cost": ""
-  },
-  {
-    "name": "Raging Volcano",
-    "aspect": "N/A",
-    "rarity": "Uncommon",
-    "type": [
-      "Mountain",
-      "Volcano",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": "Non High Lander Units without Flying take 1 damage when moving to this territory",
-    "has_back": false,
-    "is": "2",
-    "cost": ""
-  },
-  {
-    "name": "Khalaran, Home of the High Order",
-    "aspect": "Honor",
-    "rarity": "Unique",
-    "type": [
-      "City",
-      "Holy",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": null,
-    "has_back": false,
-    "is": "4",
-    "cost": ""
-  },
-  {
-    "name": "Khovidia, Last Bastion of Independence",
-    "aspect": "Resilience",
-    "rarity": "Unique",
-    "type": [
-      "City",
-      "Leyline Node",
-      "Arcane",
-      "Territory"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "landscape",
-    "text": "Hidden Cards here gain Veiled",
-    "has_back": false,
-    "is": "3",
-    "cost": ""
-  },
-  {
-    "name": null,
-    "aspect": "",
-    "rarity": null,
-    "type": [],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "cost": "",
-    "power": null,
-    "toughness": null
-  },
-  {
-    "name": "Farmland",
-    "aspect": "",
-    "rarity": "Common",
-    "type": [
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": "",
-    "has_back": false,
-    "mat": [
-      "Food"
-    ],
-    "exhaust": "1 Food",
-    "expend": "1 Food",
-    "cost": ""
-  },
-  {
-    "name": "Knight's Hall",
-    "aspect": "",
-    "rarity": "Rare",
-    "type": [
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "mat": [
-      "Food"
-    ],
-    "exhaust": "1 Food",
-    "expend": "1 Food. Units at target Territory you control gain +1 Shield until your next turn.",
-    "cost": ""
-  },
-  {
-    "name": "Plains Granary",
-    "aspect": "",
-    "rarity": "Uncommon",
-    "type": [
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "mat": [
-      "Food"
-    ],
-    "exhaust": "1 Food",
-    "expend": "1 Food, if you control a Plains territory add an additional Food",
-    "cost": ""
-  },
-  {
-    "name": "Training Grounds",
-    "aspect": "",
-    "rarity": "Uncommon",
-    "type": [
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "mat": [
-      "Food"
-    ],
-    "exhaust": "1 Food",
-    "expend": "1 Food. A Unit you control gains +1 Attack until the end of your turn",
-    "cost": ""
-  },
-  {
-    "name": "Frontline Supply Post",
-    "aspect": "",
-    "rarity": "Uncommon",
-    "type": [
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "mat": [
-      "Food",
-      "Metals"
-    ],
-    "exhaust": "1 Food or 1 Metals",
-    "expend": "1 Food or 1 Metals",
-    "cost": ""
-  },
-  {
-    "name": "Geomancer’s Forge",
-    "aspect": "",
-    "rarity": "Rare",
-    "type": [
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "mat": [
-      "Stone",
-      "Mana"
-    ],
-    "exhaust": "1 Stone or 1 Mana",
-    "expend": "1 Stone or 1 Mana. If you spent both mana and stone this turn, draw a card",
-    "cost": ""
-  },
-  {
-    "name": "Holy Forge",
-    "aspect": "",
-    "rarity": "Rare",
-    "type": [
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "mat": [
-      "Food",
-      "Metals"
-    ],
-    "exhaust": "1 Food or 1 Metals",
-    "expend": "1 Food or 1 Metals. If you have spent both a Food and a Metals this turn draw a card. (spending food or metals on generic costs doesn't count towards this)",
-    "cost": ""
-  },
-  {
-    "name": "Runestone Circle",
-    "aspect": "",
-    "rarity": "Uncommon",
-    "type": [
-      "Production",
-      "Hybrid"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "mat": [
-      "Stone",
-      "Mana"
-    ],
-    "exhaust": "1 Stone or 1 Mana",
-    "expend": "1 Stone or 1 Mana",
-    "cost": ""
-  },
-  {
-    "name": "Leyline Conduit",
-    "aspect": "",
-    "rarity": "Uncommon",
-    "type": [
-      "Siphon",
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": "",
-    "has_back": false,
-    "mat": [
-      "Mana"
-    ],
-    "exhaust": "1 Mana",
-    "expend": "1 Mana. If you control an Arcane territory gain an additional Mana",
-    "cost": ""
-  },
-  {
-    "name": "Mana Siphon",
-    "aspect": "",
-    "rarity": "Common",
-    "type": [
-      "Basic",
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": "",
-    "has_back": false,
-    "mat": [
-      "Mana"
-    ],
-    "exhaust": "1 Mana",
-    "expend": "1 Mana",
-    "cost": ""
-  },
-  {
-    "name": "Spell Nexus",
-    "aspect": "",
-    "rarity": "Rare",
-    "type": [
-      "Nexus",
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": "",
-    "has_back": false,
-    "mat": [
-      "Mana"
-    ],
-    "exhaust": "1 Mana",
-    "expend": "1 Mana. The next card you play this turn costs 1 less",
-    "cost": ""
-  },
-  {
-    "name": "Iron Mine",
-    "aspect": "",
-    "rarity": "Common",
-    "type": [
-      "Production",
-      "Basic"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": "",
-    "has_back": false,
-    "mat": [
-      "Metals"
-    ],
-    "exhaust": "1 Metals",
-    "expend": "1 Metals",
-    "cost": ""
-  },
-  {
-    "name": "Mithril Mine",
-    "aspect": "",
-    "rarity": "Uncommon",
-    "type": [
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "mat": [
-      "Metals"
-    ],
-    "exhaust": "1 Metals",
-    "expend": "1 Metals. If you control a Mountain Territory add an additional Metals.",
-    "cost": ""
-  },
-  {
-    "name": "Siege Workshop",
-    "aspect": "",
-    "rarity": "Uncommon",
-    "type": [
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "mat": [
-      "Metals"
-    ],
-    "exhaust": "1 Metals",
-    "expend": "1 Metals. Deal 1 damage to a Structure in an adjacent Territory.",
-    "cost": ""
-  },
-  {
-    "name": "Trophy Grounds",
-    "aspect": "",
-    "rarity": "Uncommon",
-    "type": [
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "mat": [
-      "Metals"
-    ],
-    "exhaust": "1 Metals",
-    "expend": "1 Metals. If you won a skirmish this turn, draw a card.",
-    "cost": ""
-  },
-  {
-    "name": "Warfoundry",
-    "aspect": "",
-    "rarity": "Uncommon",
-    "type": [
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": null,
-    "has_back": false,
-    "mat": [
-      "Metals"
-    ],
-    "exhaust": "1 Metals",
-    "expend": "1 Metals. Move a Unit you control to an unoccupied or friendly territory",
-    "cost": ""
-  },
-  {
-    "name": "Front Line Quarry",
-    "aspect": "",
-    "rarity": "Rare",
-    "type": [
-      "Quarry",
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": "",
-    "has_back": false,
-    "mat": [
-      "Stone"
-    ],
-    "exhaust": "1 Stone",
-    "expend": "1 Stone. Choose a territory, all territory improvements there heal 2 health",
-    "cost": ""
-  },
-  {
-    "name": "Mason’s Guild",
-    "aspect": "",
-    "rarity": "Uncommon",
-    "type": [
-      "Guild",
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": "",
-    "has_back": false,
-    "mat": [
-      "Stone"
-    ],
-    "exhaust": "1 Stone",
-    "expend": "1 Stone. If you control a City territory gain an additional stone",
-    "cost": ""
-  },
-  {
-    "name": "Quarry Watchtower",
-    "aspect": "",
-    "rarity": "Uncommon",
-    "type": [
-      "Quarry",
-      "Production"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": "",
-    "has_back": false,
-    "mat": [
-      "Stone"
-    ],
-    "exhaust": "1 Stone",
-    "expend": "1 Stone. If you control a fortification deal 1 damage to an enemy unit",
-    "cost": ""
-  },
-  {
-    "name": "Stone Quarry",
-    "aspect": "",
-    "rarity": "Common",
-    "type": [
-      "Production",
-      "Basic"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": "",
-    "has_back": false,
-    "mat": [
-      "Stone"
-    ],
-    "exhaust": "1 Stone",
-    "expend": "1 Stone",
-    "cost": ""
-  },
-  {
-    "name": "Lumbermill",
-    "aspect": "",
-    "rarity": "Common",
-    "type": [
-      "Production",
-      "Basic"
-    ],
-    "image": "assets/frame.png",
-    "orientation": "portrait",
-    "text": "",
-    "has_back": false,
-    "mat": [
-      "Wood"
-    ],
-    "exhaust": "1 Wood",
-    "expend": "1 Wood",
-    "cost": ""
   },
   {
     "name": "Forced March",
@@ -1364,5 +775,594 @@
     "cost": "3FoFo",
     "power": null,
     "toughness": null
+  },
+  {
+    "name": null,
+    "aspect": "",
+    "rarity": null,
+    "type": [],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "cost": "",
+    "power": null,
+    "toughness": null
+  },
+  {
+    "name": "Farmland",
+    "aspect": "",
+    "rarity": "Common",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Food"
+    ],
+    "exhaust": "1 Food",
+    "expend": "1 Food",
+    "cost": ""
+  },
+  {
+    "name": "Knight's Hall",
+    "aspect": "",
+    "rarity": "Rare",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Food"
+    ],
+    "exhaust": "1 Food",
+    "expend": "1 Food. Units at target Territory you control gain +1 Shield until your next turn.",
+    "cost": ""
+  },
+  {
+    "name": "Plains Granary",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Food"
+    ],
+    "exhaust": "1 Food",
+    "expend": "1 Food, if you control a Plains territory add an additional Food",
+    "cost": ""
+  },
+  {
+    "name": "Training Grounds",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Food"
+    ],
+    "exhaust": "1 Food",
+    "expend": "1 Food. A Unit you control gains +1 Attack until the end of your turn",
+    "cost": ""
+  },
+  {
+    "name": "Frontline Supply Post",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Food",
+      "Metals"
+    ],
+    "exhaust": "1 Food or 1 Metals",
+    "expend": "1 Food or 1 Metals",
+    "cost": ""
+  },
+  {
+    "name": "Geomancer’s Forge",
+    "aspect": "",
+    "rarity": "Rare",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Stone",
+      "Mana"
+    ],
+    "exhaust": "1 Stone or 1 Mana",
+    "expend": "1 Stone or 1 Mana. If you spent both mana and stone this turn, draw a card",
+    "cost": ""
+  },
+  {
+    "name": "Holy Forge",
+    "aspect": "",
+    "rarity": "Rare",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Food",
+      "Metals"
+    ],
+    "exhaust": "1 Food or 1 Metals",
+    "expend": "1 Food or 1 Metals. If you have spent both a Food and a Metals this turn draw a card. (spending food or metals on generic costs doesn't count towards this)",
+    "cost": ""
+  },
+  {
+    "name": "Runestone Circle",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production",
+      "Hybrid"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Stone",
+      "Mana"
+    ],
+    "exhaust": "1 Stone or 1 Mana",
+    "expend": "1 Stone or 1 Mana",
+    "cost": ""
+  },
+  {
+    "name": "Leyline Conduit",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Siphon",
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Mana"
+    ],
+    "exhaust": "1 Mana",
+    "expend": "1 Mana. If you control an Arcane territory gain an additional Mana",
+    "cost": ""
+  },
+  {
+    "name": "Mana Siphon",
+    "aspect": "",
+    "rarity": "Common",
+    "type": [
+      "Basic",
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Mana"
+    ],
+    "exhaust": "1 Mana",
+    "expend": "1 Mana",
+    "cost": ""
+  },
+  {
+    "name": "Spell Nexus",
+    "aspect": "",
+    "rarity": "Rare",
+    "type": [
+      "Nexus",
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Mana"
+    ],
+    "exhaust": "1 Mana",
+    "expend": "1 Mana. The next card you play this turn costs 1 less",
+    "cost": ""
+  },
+  {
+    "name": "Iron Mine",
+    "aspect": "",
+    "rarity": "Common",
+    "type": [
+      "Production",
+      "Basic"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Metals"
+    ],
+    "exhaust": "1 Metals",
+    "expend": "1 Metals",
+    "cost": ""
+  },
+  {
+    "name": "Mithril Mine",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Metals"
+    ],
+    "exhaust": "1 Metals",
+    "expend": "1 Metals. If you control a Mountain Territory add an additional Metals.",
+    "cost": ""
+  },
+  {
+    "name": "Siege Workshop",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Metals"
+    ],
+    "exhaust": "1 Metals",
+    "expend": "1 Metals. Deal 1 damage to a Structure in an adjacent Territory.",
+    "cost": ""
+  },
+  {
+    "name": "Trophy Grounds",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Metals"
+    ],
+    "exhaust": "1 Metals",
+    "expend": "1 Metals. If you won a skirmish this turn, draw a card.",
+    "cost": ""
+  },
+  {
+    "name": "Warfoundry",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": null,
+    "has_back": false,
+    "mat": [
+      "Metals"
+    ],
+    "exhaust": "1 Metals",
+    "expend": "1 Metals. Move a Unit you control to an unoccupied or friendly territory",
+    "cost": ""
+  },
+  {
+    "name": "Front Line Quarry",
+    "aspect": "",
+    "rarity": "Rare",
+    "type": [
+      "Quarry",
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Stone"
+    ],
+    "exhaust": "1 Stone",
+    "expend": "1 Stone. Choose a territory, all territory improvements there heal 2 health",
+    "cost": ""
+  },
+  {
+    "name": "Mason’s Guild",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Guild",
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Stone"
+    ],
+    "exhaust": "1 Stone",
+    "expend": "1 Stone. If you control a City territory gain an additional stone",
+    "cost": ""
+  },
+  {
+    "name": "Quarry Watchtower",
+    "aspect": "",
+    "rarity": "Uncommon",
+    "type": [
+      "Quarry",
+      "Production"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Stone"
+    ],
+    "exhaust": "1 Stone",
+    "expend": "1 Stone. If you control a fortification deal 1 damage to an enemy unit",
+    "cost": ""
+  },
+  {
+    "name": "Stone Quarry",
+    "aspect": "",
+    "rarity": "Common",
+    "type": [
+      "Production",
+      "Basic"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Stone"
+    ],
+    "exhaust": "1 Stone",
+    "expend": "1 Stone",
+    "cost": ""
+  },
+  {
+    "name": "Lumbermill",
+    "aspect": "",
+    "rarity": "Common",
+    "type": [
+      "Production",
+      "Basic"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "portrait",
+    "text": "",
+    "has_back": false,
+    "mat": [
+      "Wood"
+    ],
+    "exhaust": "1 Wood",
+    "expend": "1 Wood",
+    "cost": ""
+  },
+  {
+    "name": "Bustling Village",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Village",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Rocky Peaks",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Mountain",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Rolling Hills",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Hills",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Squelching Marsh",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Swamp",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Winding Coast",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Ocean",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Windswept Plains",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Plains",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Woodland Expanse",
+    "aspect": "N/A",
+    "rarity": "Common",
+    "type": [
+      "Forest",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Field of Honor",
+    "aspect": null,
+    "rarity": "Rare",
+    "type": [
+      "Stadium",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "When a unit moves here, as long as you control this territory you may have them challenge an enemy unit",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "The Obsidian Ward",
+    "aspect": null,
+    "rarity": "Rare",
+    "type": [
+      "City",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "This territory can hold 2 extra hidden units",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
+  },
+  {
+    "name": "Raging Volcano",
+    "aspect": "N/A",
+    "rarity": "Uncommon",
+    "type": [
+      "Mountain",
+      "Volcano",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "Non High Lander Units without Flying take 1 damage when moving to this territory",
+    "has_back": false,
+    "is": "2",
+    "cost": ""
+  },
+  {
+    "name": "Khalaran, Home of the High Order",
+    "aspect": "Honor",
+    "rarity": "Unique",
+    "type": [
+      "City",
+      "Holy",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": null,
+    "has_back": false,
+    "is": "4",
+    "cost": ""
+  },
+  {
+    "name": "Khovidia, Last Bastion of Independence",
+    "aspect": "Resilience",
+    "rarity": "Unique",
+    "type": [
+      "City",
+      "Leyline Node",
+      "Arcane",
+      "Territory"
+    ],
+    "image": "assets/frame.png",
+    "orientation": "landscape",
+    "text": "Hidden Cards here gain Veiled",
+    "has_back": false,
+    "is": "3",
+    "cost": ""
   }
 ]
